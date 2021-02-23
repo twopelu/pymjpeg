@@ -9,6 +9,7 @@ def request_headers():
         'Content-Type': 'multipart/x-mixed-replace;boundary=%s' % boundary,
         'Expires': 'Mon, 1 Jan 2030 00:00:00 GMT',
         'Pragma': 'no-cache',
+		'Access-Control-Allow-Origin': '*' # CORS
     }
 
 def image_headers(filename):
